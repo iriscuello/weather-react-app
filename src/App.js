@@ -15,7 +15,7 @@ function App() {
       <div className="container">
         <SearchEngine />
         <h1 id="city">Toronto</h1>
-        <h2 id="dateTime">October 26, 2020</h2>
+        <h2 id="dateTime">November 26, 2020</h2>
         <div className="row">
           <Current />
           <Description />
