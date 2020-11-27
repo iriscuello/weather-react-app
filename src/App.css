@@ -2,8 +2,6 @@
 
 .App {
   max-height: 700px;
-  display: block;
-  margin: 0 auto;
 }
 
 h1 {
@@ -17,7 +15,8 @@ h2 {
 }
 .container {
   border: 1px solid grey;
-  margin: 20px 40px;
+  display: block;
+  margin: 0 auto;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 0;
