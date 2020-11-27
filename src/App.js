@@ -24,7 +24,7 @@ function App() {
         <a href="https://github.com/iriscuello/weather-react-app">
           Open-sourced 
         </a>
-        on GitHub
+        <span> on GitHub</span>
       </footer>
     </div>
   );
