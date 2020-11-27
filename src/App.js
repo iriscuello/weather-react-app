@@ -21,7 +21,7 @@ function App() {
           <Description />
           
         </div>
-      </div>
+          </div>
       <footer>
           <a href="https://github.com/iriscuello/weather-react-app" target="_blank" >Open-soured on GitHub</a></footer>
     </div>
