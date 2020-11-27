@@ -8,7 +8,6 @@ import "./Description.css";
 import "./SearchEngine.css";
 import "./index.css";
 
-
 function App() {
   return (
     <div className="App">
@@ -19,11 +18,16 @@ function App() {
         <div className="row">
           <Current />
           <Description />
-          
         </div>
-          </div>
+      </div>
       <footer>
-          <a href="https://github.com/iriscuello/weather-react-app" target="_blank" >Open-soured on GitHub</a></footer>
+        <a
+          href="https://github.com/iriscuello/weather-react-app"
+          target="_blank"
+        >
+          Open-soured on GitHub
+        </a>
+      </footer>
     </div>
   );
 }
