@@ -4,8 +4,9 @@
   font-size: 20px;
 }
 
-i.fa-cloud {
-  margin-left: 40px;
-  font-size: 70px;
-  padding-bottom: 10px;
+img {
+  margin-top: 0px;
+  font-size: 50px;
+  padding-bottom: 0px;
+  max-width: 175px;
 }

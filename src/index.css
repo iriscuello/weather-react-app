@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 
 body {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   font-family: "Bebas Neue", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
