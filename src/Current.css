@@ -1,0 +1,13 @@
+#current {
+  list-style: none;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+#temperature {
+  font-size: 60px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}

@@ -1,0 +1,11 @@
+#listWH {
+  padding-top: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+i.fa-cloud {
+  margin-left: 40px;
+  font-size: 70px;
+  padding-bottom: 10px;
+}
