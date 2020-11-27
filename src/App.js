@@ -10,14 +10,16 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="container">
-      <div className="weather-style">
+    <div className="App">
+      <div className="container">
         <SearchEngine />
         <h1 id="city">Toronto</h1>
         <h2 id="dateTime">October 26, 2020</h2>
         <div className="row">
           <Current />
           <Description />
+          <footer>
+          <a href="https://github.com/iriscuello/weather-react-app" target="_blank" >Open-soured on GitHub</a></footer>
         </div>
       </div>
     </div>
