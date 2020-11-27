@@ -21,11 +21,8 @@ function App() {
         </div>
       </div>
       <footer>
-        <a
-          href="https://github.com/iriscuello/weather-react-app"
-          target="_blank"
-        >
-          Open-soured on GitHub
+        <a href="https://github.com/iriscuello/weather-react-app">
+          Open-sourced on GitHub
         </a>
       </footer>
     </div>
