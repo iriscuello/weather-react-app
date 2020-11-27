@@ -18,10 +18,11 @@ function App() {
         <div className="row">
           <Current />
           <Description />
-          <footer>
-          <a href="https://github.com/iriscuello/weather-react-app" target="_blank" >Open-soured on GitHub</a></footer>
+          
         </div>
       </div>
+      <footer>
+          <a href="https://github.com/iriscuello/weather-react-app" target="_blank" >Open-soured on GitHub</a></footer>
     </div>
   );
 }

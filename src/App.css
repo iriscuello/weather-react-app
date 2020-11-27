@@ -15,7 +15,7 @@ h1 {
 h2 {
   font-size: 30px;
 }
-.weather-style {
+.container {
   border: 1px solid grey;
   margin: 20px 40px;
   border-radius: 5px;
@@ -23,4 +23,8 @@ h2 {
   margin-bottom: 0;
   background: linear-gradient(to right, #d6a4a4, #dae2f8);
   max-width: 700px;
+}
+
+footer {
+  margin-left: 30px;
 }
