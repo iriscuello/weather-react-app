@@ -20,7 +20,7 @@ function App() {
           <Description />
         </div>
       </div>
-      <footer>
+      <footer>Coded by Iris Linares
         <a href="https://github.com/iriscuello/weather-react-app">
           Open-sourced 
         </a>
