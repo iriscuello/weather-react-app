@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Current(props) {
+export default function Current() {
   return (
     <div className="col-6">
       <ul id="current">
