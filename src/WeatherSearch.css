@@ -11,7 +11,7 @@
 }
 
 #temperature {
-  font-size: 60px;
+  font-size: 70px;
   padding-bottom: 20px;
   padding-right: 10px;
 }
@@ -53,4 +53,16 @@ img {
   margin-left: 5px;
   position: relative;
   top: -28px;
+}
+
+h1 {
+  font-size: 80px;
+  color: rgb(93, 93, 201);
+  font-family: "Bebas Neue", cursive;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 15px;
 }
