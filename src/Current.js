@@ -5,9 +5,9 @@ export default function Current() {
     <div className="row">
       <div className="col-6">
         <ul id="current">
-          <li id="currTemp">
+          <li>
             <span id="temperature">6</span>
-            <span id="cel">℃</span> |<span id="fer">℉</span>
+            <span id="cel">℃</span><span id="line">|</span> <span id="fer">℉</span>
           </li>
           <li id="realFeel">Feels Like: 4℃</li>
           <li id="hiTemp">HI: 11℃</li>
