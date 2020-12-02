@@ -71,7 +71,7 @@ export default function SearchEngine() {
             <ul id="listWH">
               <li id="windSpeed">Wind Speed: {weatherData.wind} km/h</li>
               <li id="humidity">Humidity: {weatherData.humidity}%</li>
-              <li id="description">{weatherData.description}</li>
+              <li className="text-capitalize" id="description">{weatherData.description}</li>
             </ul>
           </div>
         </div>
