@@ -10,6 +10,7 @@ export default function SearchEngine() {
             placeholder="Enter City..."
             className="form-control"
             id="searchEngine"
+            autoFocus="on"
           />
         </div>
         <div className="col-3">

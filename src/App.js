@@ -1,12 +1,12 @@
 import SearchEngine from "./SearchEngine";
 import Current from "./Current";
-import Description from "./Description";
+import Forecast from "./Forecast";
 
 import "./App.css";
 import "./Current.css";
-import "./Description.css";
 import "./SearchEngine.css";
 import "./index.css";
+import "./Forecast.css";
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
         <SearchEngine />
         <h1 id="city">Toronto</h1>
         <h2 id="dateTime">November 26, 2020</h2>
-        <div className="row">
+        <div>
           <Current />
-          <Description />
+          <Forecast />
         </div>
       </div>
       <footer>Coded by Iris Linares
