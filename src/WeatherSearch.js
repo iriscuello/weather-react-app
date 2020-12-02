@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function SearchEngine() {
-  const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   //const [city, setCity] = useState("");
 
   function tempDisplay(response) {
-    console.log(response.data);
     setWeatherData({
+      ready: true,
+      date: "November 26, 2020  04:39",
+      iconURL:"https://d29fhpw069ctt2.cloudfront.net/icon/image/84559/preview.svg",
       temperature: response.data.main.temp,
       realFeel: Math.round(response.data.main.feels_like),
       hiTemp: Math.round(response.data.main.temp_max),
@@ -17,10 +18,9 @@ export default function SearchEngine() {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
     });
-    setReady(true);
   }
 
-  if (ready) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <form id="search-form" className="mb-3">
@@ -44,7 +44,7 @@ export default function SearchEngine() {
             </div>
             <div>
               <h1 id="city">Toronto</h1>
-              <h2 id="dateTime">November 26, 2020</h2>
+              <h2 id="dateTime">{weatherData.date} pm</h2>
             </div>
           </div>
         </form>
@@ -65,7 +65,7 @@ export default function SearchEngine() {
           </div>
           <div className="col-6" id="image">
             <img
-              src="https://d29fhpw069ctt2.cloudfront.net/icon/image/84559/preview.svg"
+              src={weatherData.iconURL}
               alt="Cloudy"
             />
             <ul id="listWH">
