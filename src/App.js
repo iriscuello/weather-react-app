@@ -1,6 +1,7 @@
 import WeatherSearch from "./WeatherSearch";
 import Forecast from "./Forecast";
 
+
 import "./App.css";
 import "./WeatherSearch.css";
 import "./index.css";
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <div className="container">
  
-        <WeatherSearch />
+        <WeatherSearch cityDefault="Toronto"/>
         <div>
           <Forecast />
         </div>
