@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import DateTime from "./DateTime";
+import WeatherInfo from "./WeatherInfo";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function tempDisplay(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
@@ -18,7 +19,7 @@ export default function SearchEngine(props) {
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      city: response.data.main.name,
+      city: response.data.name,
     });
   }
 
@@ -44,42 +45,13 @@ export default function SearchEngine(props) {
                 className="btn btn-primary w-100"
               />
             </div>
-            <div>
-              <h1 id="city">Toronto</h1>
-              <DateTime date={weatherData.date}/>
-            </div>
           </div>
         </form>
-        <div className="row">
-          <div className="col-6">
-            <ul id="current">
-              <li>
-                <span id="temperature">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span id="cel">℃</span>
-                <span id="line">|</span> <span id="fer">℉</span>
-              </li>
-              <li id="realFeel">Feels Like: {weatherData.realFeel}℃</li>
-              <li id="hiTemp">HI: {weatherData.hiTemp}℃</li>
-              <span id="lowTemp">LOW: {weatherData.lowTemp}℃ </span>
-            </ul>
-          </div>
-          <div className="col-6" id="image">
-            <img src={weatherData.iconURL} alt="Cloudy" />
-            <ul id="listWH">
-              <li id="windSpeed">Wind Speed: {weatherData.wind} km/h</li>
-              <li id="humidity">Humidity: {weatherData.humidity}%</li>
-              <li className="text-capitalize" id="description">
-                {weatherData.description}
-              </li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
-   let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityDefault}&appid=f6daddd2490e280fc02eb01a9840f82a&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityDefault}&appid=f6daddd2490e280fc02eb01a9840f82a&units=metric`;
 
     axios.get(url).then(tempDisplay);
 
