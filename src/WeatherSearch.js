@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import "./WeatherSearch.css";
 
 export default function SearchEngine(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -67,6 +68,7 @@ let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f6dad
       </div>
     );
   } else {
+    search();
     return "Loading...";
   }
 }
