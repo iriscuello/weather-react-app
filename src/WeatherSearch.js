@@ -11,8 +11,7 @@ export default function SearchEngine(props) {
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
-      iconURL:
-        `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       realFeel: Math.round(response.data.main.feels_like),
       hiTemp: Math.round(response.data.main.temp_max),

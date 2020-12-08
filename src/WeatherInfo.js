@@ -1,5 +1,6 @@
 import React from "react";
 import DateTime from "./DateTime";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
     return (
@@ -22,7 +23,10 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
           <div className="col-6" id="image">
-            <img src={props.data.iconURL} alt="Cloudy" />
+            <div className="float-left">
+            <WeatherIcon code={props.data.icon}
+             alt={props.data.description} />
+             </div>
             <ul id="listWH">
               <li id="windSpeed">Wind Speed: {props.data.wind} km/h</li>
               <li id="humidity">Humidity: {props.data.humidity}%</li>
