@@ -23,9 +23,9 @@ export default function WeatherInfo(props) {
             </ul>
           </div>
           <div className="col-6" id="image">
-            <div className="float-left">
+            <div>
             <WeatherIcon code={props.data.icon}
-             alt={props.data.description} />
+              />
              </div>
             <ul id="listWH">
               <li id="windSpeed">Wind Speed: {props.data.wind} km/h</li>
@@ -35,7 +35,7 @@ export default function WeatherInfo(props) {
               </li>
             </ul>
           </div>
-        </div>
+          </div>
       </div>
     );
 }
