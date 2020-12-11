@@ -1,6 +1,7 @@
 import React from "react";
 import DateTime from "./DateTime";
 import WeatherIcon from "./WeatherIcon";
+import TempConversion from "./TempConversion";
 
 export default function WeatherInfo(props) {
     return (
@@ -8,6 +9,7 @@ export default function WeatherInfo(props) {
         <h1 id="city">{props.data.city}</h1>
         <DateTime date={props.data.date} />
         <div className="row">
+          <TempConversion celsius={props.data.temperature} />
           <div className="col-6">
             <ul id="current">
               <li>
