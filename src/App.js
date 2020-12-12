@@ -1,11 +1,10 @@
 import WeatherSearch from "./WeatherSearch";
-import Forecast from "./Forecast";
+
 
 
 import "./App.css";
 import "./WeatherSearch.css";
 import "./index.css";
-import "./Forecast.css";
 
 function App() {
   return (
@@ -13,9 +12,6 @@ function App() {
       <div className="container">
  
         <WeatherSearch cityDefault="Toronto"/>
-        <div>
-          <Forecast />
-        </div>
       </div>
       <footer>
         Coded by Iris Linares
