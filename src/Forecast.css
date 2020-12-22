@@ -1,0 +1,7 @@
+.weather-forecast canvas {
+    padding-left: 0;
+    max-width: 75px;
+}
+#fri {
+    text-align: center;
+}
