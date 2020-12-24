@@ -15,7 +15,7 @@ export default function Forecast(props) {
   if (loaded) {
     console.log(forecast.list);
     return (
-      <div className="weather-forecast row">
+      <div className="weather-forecast">
         <ForecastPreview data={forecast.list} />
       </div>
     );

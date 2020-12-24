@@ -3,6 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function ForecastPreview(props){
     return (
+      <div className ="Weather-Forecast row">
       <div className="col-2">
         <h3>Tues</h3>
         <WeatherIcon code={props.data[0].weather[0].icon} />
@@ -63,5 +64,6 @@ export default function ForecastPreview(props){
             <span id="sun">{Math.round(props.data[39].main.temp_max)}℃</span>
           </div>
         </div>
-    );
+        </div>
+     );
 }
