@@ -12,8 +12,7 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
-  if (loaded) {
-    console.log(forecast.list);
+  if (loaded && props.city === forecast.city.name) {
     return (
       <div className="weather-forecast">
         <ForecastPreview data={forecast.list} />
